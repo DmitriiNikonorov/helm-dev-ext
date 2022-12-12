@@ -1,0 +1,44 @@
+{
+    "name": "helm-dev-ext",
+    "displayName": "Helm Dev Extension",
+    "description": "Extension for helm charts developers. Includes snippets and code coloring",
+    "version": "0.0.12",
+    "publisher": "digitalstudium",
+    "repository": "https://github.com/digitalstudium/helm-dev-ext",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "extensionDependencies": [
+        "redhat.vscode-yaml",
+        "tim-koehler.helm-intellisense"
+    ],
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "helm",
+                "path": "./snippets.json"
+            }
+        ],
+        "languages": [
+            {
+                "id": "helm",
+                "aliases": [
+                    "helm-template",
+                    "helm"
+                ],
+                "filenamePatterns": [
+                    "**/templates/*.yaml",
+                    "**/templates/*.yml",
+                    "**/templates/*.tpl",
+                    "**/templates/**/*.yaml",
+                    "**/templates/**/*.yml",
+                    "**/templates/**/*.tpl"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ]
+    }
+}

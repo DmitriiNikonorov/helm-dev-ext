@@ -79,17 +79,17 @@
   "include": {
     "prefix": "include",
     "body": [
-      "{{- include \"${1}\" . }}"
+      "{{- include \"$0\" . }}"
     ],
     "description": "Call function"
   },
   "include2": {
     "prefix": "include2",
     "body": [
-      "{{- \\$val1 := ${1} }}",
-      "{{- \\$val2 := ${2} }}",
+      "{{- \\$val1 := $1 }}",
+      "{{- \\$val2 := $2 }}",
       "",
-      "{{- include \"${3}\" (list \\$val1 \\$val2) }}"
+      "{{- include \"$0\" (list \\$val1 \\$val2) }}"
     ],
     "description": "Call a function with two arguments"
   }

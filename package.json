@@ -2,7 +2,7 @@
     "name": "helm-dev-ext",
     "displayName": "Helm Dev Extension",
     "description": "Extension for helm charts developers. Includes snippets and code coloring",
-    "version": "1.0.0",
+    "version": "1.0.4",
     "publisher": "digitalstudium",
     "repository": "https://github.com/digitalstudium/helm-dev-ext",
     "engines": {
@@ -10,7 +10,8 @@
     },
     "extensionDependencies": [
         "redhat.vscode-yaml",
-        "tim-koehler.helm-intellisense"
+        "tim-koehler.helm-intellisense",
+        "makeoptim.istio-snippets"
     ],
     "categories": [
         "Snippets"

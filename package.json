@@ -10,7 +10,7 @@
     },
     "extensionDependencies": [
         "redhat.vscode-yaml",
-        "tim-koehler.helm-intellisense",
+        "tim-koehler.helm-intellisense"
     ],
     "categories": [
         "Snippets"
